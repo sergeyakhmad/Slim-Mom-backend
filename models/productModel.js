@@ -1,5 +1,4 @@
 const { Schema, model } = require("mongoose");
-const Joi = require("joi");
 
 const productSchema = Schema({
   categories: {
@@ -20,16 +19,6 @@ const productSchema = Schema({
   },
 });
 
-const getDataForBMR = Joi.object({
-  height: Joi.string().required(),
-  age: Joi.string().required(),
-  currentWeight: Joi.string().required(),
-  desiredWeight: Joi.string().required(),
-  bloodType: Joi.string().required(),
-});
-
-const schemas = { getDataForBMR };
-
 const Product = model("products", productSchema);
 
-module.exports = { Product, schemas };
+module.exports = { Product };
