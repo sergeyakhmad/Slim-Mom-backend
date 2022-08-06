@@ -21,7 +21,6 @@
   "bugs": {
     "url": "https://github.com/sergeyakhmad/Slim-Mom-backend/issues"
   },
-  "homepage": "https://github.com/sergeyakhmad/Slim-Mom-backend#readme",
   "dependencies": {
     "@sendgrid/mail": "^7.7.0",
     "bcrypt": "^5.0.1",
